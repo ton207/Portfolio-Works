@@ -1,0 +1,283 @@
+
+html {
+    font-size: 100%;
+}
+/* font-size100%とすると、ユーザーがブラウザで設定したフォントサイズが正しく反映される 100％＝16px*/
+body {
+    color: #24292e;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+/* にmaxサイズの設定で画像が画面の横幅からはみ出るのを防ぐ。 */
+li {
+    list-style: none;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    header
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+header {
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 270px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+/* display:flexでロゴとグローバルナビゲーションを横並び。
+justify-content: space-betweenで両端に配置。align-items:centerで高さを中央揃え。
+padding:0 4で、画面幅を狭めた際に両サイドに余白ができるよう設定 */
+
+header ul {
+    display: flex;
+    padding: 10px 0;
+}
+/* display:flexでliを横並びに。 */
+
+header li {
+    font-size: 0.9rem;
+    margin-left: 30px;
+}
+header li a {
+    color: #24292e;
+}
+header li a:hover {
+    opacity: 0.7;
+}
+header li img.icon {
+    width: 20px;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    section 共通クラス
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto 130px auto;
+    font-size: 0.9rem;
+    padding: 0 4%;
+}
+.site-title {
+    line-height: 1px;
+}
+
+/* h１用クラス */
+.site-title a {
+    display: block;
+}
+
+/* h2用クラス */
+.sec-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    section-mainvisual
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.mainvisual {
+    margin-bottom: 80px;
+  }
+.mainvisual img {
+    width: 100%;
+    max-width: 1920px;
+    height: 420px;
+    object-fit: cover;
+  }
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    section-about
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.about ul {
+    margin-bottom: 30px;
+}
+.about li:first-child {
+    margin-bottom: 30px;
+}
+/* 名前の下だけ余白を入れる */
+
+.about p {
+    text-align: justify; 
+}
+/* text-align:justifyでテキストの両端を揃える */
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    section-works
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.works ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+/* 画像用リスト。display:flex;で横並び.about:wrapで横幅いっぱいまできた時に折り返す。
+justify-content: space-between;で左右の画像が両端に揃える。スマホはflex-direction:columnで縦に並べる。 */
+.works li {
+    width: 31%;
+    margin-bottom: 23px;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    section-news
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.news dl {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #c8c8c8;
+    margin-bottom: 20px;
+}
+.news dt {
+    width: 20%;
+    border-bottom: solid 1PX #c8c8c8;
+    padding: 15PX;
+}
+.news dd {
+    width: 80%;
+    border-bottom: solid 1PX #c8c8c8;
+    padding: 15PX;
+}
+/* display:flexで日付とニュースタイトルを横並びに配置。flex-wrap:wrapで折返し設定。そのままだと折返し位置がずれる。
+dtとddの横幅が合わせて100%になるように各widthを設定。するとddタグできれいに折返さる。 */
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    section-contact
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.contact dl {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.contact dt {
+    width: 15%;
+}
+.contact dd {
+    width: 85%;
+    margin-bottom: 15px;
+}
+.contact dd input,
+.contact dd textarea {
+    width: 100%;
+    border: solid 1PX #c8c8c8;
+    padding: 10px;
+}
+.contact dd textarea {
+    height: 10rem;
+}
+.contact .button {
+    text-align: center;
+}
+.contact .button input {
+    width: 200px;
+    background-color:  #24292e;
+    color: #fff;
+    padding: 15px 0;
+    border: solid 1px #24292e;
+}
+.contact .button input:hover {
+    background-color: #fff;
+    color: #24292e;
+}
+/* 
+・display:flexでフォーム内のラベル（dt）と入力フィールド（dd）を横並びに。
+・dtとddの横幅が100%になったら折り返されるようにflex-wrap:wrapを設定。 
+・contact dd input（入力フィールド input）
+    contact dd textarea（入力フィールド textarea）width:100%を設定し、入力フィールドを親要素いっぱいまで広げる。
+・contact .button input（送信ボタン）
+    width:200px横幅を設定。ホバー時に背景を白にするため、ボタンが見えなくならないようborderで枠線を設定。*/
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    footer
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+footer {
+    background-color: #24292e;
+    color: #fff;
+    font-size: 0.5rem;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    スマホ画面　
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+@media screen and (max-width: 600px) {
+    /* ーーーーーーーーーーーーーーーーーーーーーーーー
+        header
+    ーーーーーーーーーーーーーーーーーーーーーーーーーー */
+    header {
+        max-width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    header li {
+        font-size: 0.8rem;
+        margin-left: 20px;
+    }
+    /* スマホではナビの左側に余白ができないよう、メニューの最初のmargin-leftをゼロに設定 */
+    header li:first-child {
+        margin-left: 0;
+    }  
+    /* ーーーーーーーーーーーーーーーーーーーーーーーーー
+        Works
+    ーーーーーーーーーーーーーーーーーーーーーーーーーー */
+    /* 画像をスマホではflex-direction:columnで縦に並べる。 */
+    .works ul {
+        flex-direction: column;
+    }
+    /* スマホでは画像を横幅いっぱいまで広げる */
+    .works li {
+        width: 100%;
+    }
+     /* ーーーーーーーーーーーーーーーーーーーーーーーーー
+        News
+    ーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+    /* スマホではflex-direction:columnで日付とタイトルを縦並び。dtとddを横幅100％に表示 */
+    .news dl {
+        flex-direction: column;
+    }
+    .news dt {
+        width: 100%;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    .news dd {
+        width: 100%;
+        border-top: 0;
+    }
+     /* ーーーーーーーーーーーーーーーーーーーーーーーーー
+        Contact
+    ーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+    /* スマホのではflex-direction:columnでラベルと入力フィールドが縦並びに。 */
+    .contact dl {
+        flex-direction: column;
+        margin-right: -65px;
+    }
+    .contact .dt {
+        width: 100%;
+    }
+    .contact .dd {
+        width: 100%;
+    }
+    /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+        section 共通クラス
+    ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+    .wrapper {
+        margin-bottom: 70px;
+    }
+    .site-title {
+        margin-top: 20px;
+    }
+    .sec-title {
+        margin-bottom: 40px;
+    }
+
+}
+

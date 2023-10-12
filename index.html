@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=”description” content=”ここにmeta descriptionが入ります” />
+    <title>My Works-Portfolio</title>
+    <link rel="icon" href="img/favicon.ico">
+    <!-- reset.css ress -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    header
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+<header>
+    <h1 class="site-title"><a href="index.html"><img src="img/logo.svg" alt="My Work"></a></h1>
+    <nav>
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Works</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img class="icon" src="https://code-jump.com/demo/html/portfolio1/img/icon-instagram.png" alt="インスタグラム">  
+              </a></li>
+        </ul>
+    </nav>
+</header>   
+
+<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    mainvisual
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+<main>
+    <div class="mainvisual">
+        <picture>
+            <source media="(max-width: 600px)" srcset="https://code-jump.com/demo/html/portfolio1/img/mainvisual-sp.jpg">
+            <img src="https://code-jump.com/demo/html/portfolio1/img/mainvisual-pc.jpg" alt="テキストテキストテキスト">
+        </picture>
+    </div>
+    <!-- PCとスマホで画像を出し分けたいので、pictureタグで画像の切り替えを行う。PC:pictureタグ内のimgタグがPC用画像。
+    スマホ:pictureタグ内のsourceがスマホ用画像で、レスポンシブのブレークポイントと同じく600pxでスマホ用画像に切り替わる。 -->
+
+<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    about
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー --> 
+    <section class="about wrapper">
+        <h2 class="sec-title">About</h2>
+    <ul>
+        <li>Neko Grammer</li>
+        <li>2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 000-0000 Japan</li>
+        <li>tel: 000-0000-0000</li>
+        <li>url: www.xxxxxx.jp</li>
+        <li>mail: xxx@xxxxxx.jp</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet. Eos voluptatibus numquam At minus itaque 33 
+        voluptatem possimus est consequatur deleniti et voluptas ducimus eum natus 
+        iure ea itaque sint. Et pariatur enim ab neque quibusdam et tenetur animi. 
+        Qui voluptatum illo rem ratione veritatis quo earum autem id eveniet neque 
+        ut excepturi sunt et odit officiis aut mollitia corrupti.
+    </p>
+    </section>
+
+<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    works
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+    <section class="works wrapper">
+        <h2 class="sec-title">Works</h2>
+        <ul>
+            <li><img src="https://code-jump.com/demo/html/portfolio1/img/works1.jpg" alt="works1"></li>
+            <li><img src="https://code-jump.com/demo/html/portfolio1/img/works2.jpg" alt="works2"></li>
+            <li><img src="https://code-jump.com/demo/html/portfolio1/img/works3.jpg" alt="works3"></li>
+            <li><img src="https://code-jump.com/demo/html/portfolio1/img/works4.jpg" alt="works4"></li>
+            <li><img src="https://code-jump.com/demo/html/portfolio1/img/works5.jpg" alt="works5"></li>
+            <li><img src="https://code-jump.com/demo/html/portfolio1/img/works6.jpg" alt="works5"></li>
+        </ul>
+    </section>
+
+<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    news
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+    <section class="news wrapper">
+        <h2 class="sec-title">News</h2>
+        <dl>
+            <dt>2024.XX.XX</dt>
+            <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd>
+            <dt>2024.XX.XX</dt>
+            <dd>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</dd>
+            <dt>2023.XX.XX</dt>
+            <dd>【イベント開催のお知らせ】Aut iste sapiente quo nesciunt voluptatem. </dd>
+            <dt>2023.XX.XX</dt>
+            <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd>
+            <dt>2023.XX.XX</dt>
+            <dd>2023.XX.XX</dd>
+        </dl>
+    </section>
+
+<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    contact
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+    <section class="contact wrapper">
+        <h2 class="sec-title">Contact</h2>
+        <form action="#" method="post">
+            <dl>
+                <dt><label for="name">NAME</label></dt>
+                <dd><input type="text" id="name" name="your-name"></dd>
+                <dt><label for="email">E-mail</label></dt>
+                <dd><input type="email" id="email" name="your-email"></dd>
+                <dt><label for="message">MESSAGE</label></dt>
+                <dd><textarea name="message" id="your-message"></textarea></dd>
+            </dl>
+            <div class="button"><input type="submit" value="送信"></div>
+        </form>
+    </section>
+</main>
+
+<!-- フォーム内はdlタグを用いて、ラベルをdt、入力フィールドをddタグで記述。
+inputで指定したid名を、labelのfor属性で指定することにより両者の紐づけができ、ラベルをクリックした際に自動で入力フィールドがアクティブになる。 -->
+
+<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    footer
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+<footer>
+    <p>&copy; 2023 My Work</p>
+</footer>
+
+
+</body>
+</html>
+
